@@ -3,6 +3,7 @@ import re
 import pprint
 import json
 import numpy as np
+import time
 
 ALL_SET = ['s1', 's2', 's3', 's4', 's5']
 
@@ -97,31 +98,29 @@ class Env:
     D = len(Env.all_docs)
     T = Env.w_size
 
-    print T
+    print ' >>> init_idf Document = %d Term = %d' % (D, T)
+
     for t in range(T):
       nt = 0
       for d in Env.all_docs:
-        if t in d.tf.keys():
+        if t in d.tf:
           nt += 1
+
       Env.idf[t] = np.log(D * 1.0 / nt)
+
+    print ' >>> init_idf ok '
 
 
 class Doc:
-
-  ddir = ''
-
-  dname = ''
-  set_id = 0
-  label = 0
-  tf = {}
-  tfidf = {}
-  tfidf_bool = False
 
   def __init__(self, dname, set_id, label):
     self.dname = dname
     self.set_id = set_id
     self.label = label
     self.ddir = Env.data_dir + '/' + set_id + '/' + label2str(label) + '/' + dname
+    self.tfidf_bool = False
+    self.tf = {}
+    self.tfidf = {}
 
   def __extract_raw_words(self):
     with open(self.ddir) as f:
@@ -132,24 +131,27 @@ class Doc:
     for w in wlist:
       if w in Env.sw_set:
         continue
-      if len(w) == 1:
+      if len(w) <= 3:
         continue
 
       wid = Env.w2id(w)
-      _v = self.tf.get(wid, 0)
-      self.tf[wid] = int(_v) + 1
+      if wid not in self.tf:
+        self.tf[wid] = 0
+      self.tf[wid] += 1
 
   def read_doc(self):
     all_words = self.__extract_raw_words()
     self.__extract_valid_ids(all_words)
 
   def __cal_tfidf(self):
-    for _t in self.tf.keys:
+    for _t in self.tf.keys():
       self.tfidf[_t] = self.tf[_t] * Env.idf[_t]
 
   def get_tfidf(self):
     if not self.tfidf_bool:
       self.__cal_tfidf()
+      self.tfidf_bool = True
+
     return self.tfidf
 
   def __repr__(self):

@@ -1,35 +1,52 @@
 import numpy as np
+import pprint
+import time
 
 
 class Perceptron:
 
-  def __init__(self, _dt, _y, alpha=0.25, nit=500):
+  def __init__(self, _dt, _y, alpha=0.25, nit=500, eps=0.1):
     self.D, self.V = _dt.shape
     self.dt = _dt
     self.y = _y
     self.alpha = alpha
     self.nit = nit
     self.w = np.zeros((self.V,), dtype=float)
+    self.eps = eps
 
   def train(self):
-
+    w = np.copy(self.w)
     for it in range(self.nit):
-      print "[ Perceptron ] iteration %d" % it
+      old_w = np.copy(w)
       for itd in range(self.D):
         x = self.dt[itd]
-        w = self.w
-        p = 0.0
-        p += sum(x * w)
+        p = sum(x * w)
+        print 'p = %f' % p
+        pprint.pprint(x)
+        pprint.pprint(w)
+        time.sleep(10)
         if self.y[itd] * p <= 0.0:
           w += self.alpha * self.y[itd] * x
 
-        self.w = w
-      return self.w
+      self.w = np.copy(w)
+
+      # Calculate eps
+      _eps = 0.0
+      pprint.pprint(w)
+      pprint.pprint(old_w)
+      for i in range(len(self.w)):
+        _eps += abs(w[i] - old_w[i])
+
+      print ' >>> Perceptron >>>  iteration %d  >>  %f' % (it, _eps)
+      if _eps < self.eps:
+        return self.w
+    return self.w
 
   def test(self, _dt, y):
     d, v = _dt.shape
     p = 0.0
-    test_res = np.zeros((d,), dtype=float)
+    #test_res = np.zeros((d,), dtype=float)
+    test_res = []
     for itd in range(d):
       p += sum(self.w * _dt[itd])
       test_res.append(p)
