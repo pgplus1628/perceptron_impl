@@ -21,10 +21,6 @@ class Perceptron:
       for itd in range(self.D):
         x = self.dt[itd]
         p = sum(x * w)
-        print 'p = %f' % p
-        pprint.pprint(x)
-        pprint.pprint(w)
-        time.sleep(10)
         if self.y[itd] * p <= 0.0:
           w += self.alpha * self.y[itd] * x
 
@@ -32,8 +28,6 @@ class Perceptron:
 
       # Calculate eps
       _eps = 0.0
-      pprint.pprint(w)
-      pprint.pprint(old_w)
       for i in range(len(self.w)):
         _eps += abs(w[i] - old_w[i])
 

@@ -45,8 +45,6 @@ def main():
     vec = np.zeros(V, dtype=float)
     for _k, _v in tfidf_dic.items():
       vec[int(_k)] = _v
-    #TODO
-    pprint.pprint(vec.nonzero())
 
     DT[itd] = vec
     Y[itd] = doc.label
@@ -56,8 +54,6 @@ def main():
   print '[ Train ] start'
   mod = Perceptron(DT, Y, alpha, nit)
 
-  #TODO
-  pprint.pprint(DT.nonzero())
 
   mod.train()
   print '[ Train ] ok'

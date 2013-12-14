@@ -3,7 +3,6 @@ import re
 import pprint
 import json
 import numpy as np
-import time
 
 ALL_SET = ['s1', 's2', 's3', 's4', 's5']
 
