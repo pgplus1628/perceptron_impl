@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfff775a-586d-4f21-b966-9a3f1fbc25f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/document.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/environment.py" afterPath="$PROJECT_DIR$/src/environment1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/environment.py" afterPath="$PROJECT_DIR$/src/environment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/perceptron_impl.py" afterPath="$PROJECT_DIR$/src/perceptron_impl.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="perceptron_impl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="perceptron_impl.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="18" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="945">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+              <folding>
+                <marker date="1387006033000" expanded="true" signature="0:85" placeholder="import ..." />
+                <marker date="1387006033000" expanded="true" signature="99:1341" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="environment.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/environment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="0" selection-start="2832" selection-end="2832" vertical-scroll-proportion="0.81545067" vertical-offset="1530" max-vertical-offset="2310">
+            <state line="170" column="0" selection-start="3474" selection-end="3474" vertical-scroll-proportion="0.9656652" vertical-offset="1875" max-vertical-offset="2655">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -58,8 +78,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/perceptron_impl.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/environment.py" />
       </list>
     </option>
@@ -116,6 +136,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -150,7 +171,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,107 +389,134 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+        <state line="26" column="18" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environment1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="22" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2115">
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environment1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="22" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="2115">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environment1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="22" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2115">
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environment1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="2790">
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="699" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="699">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environment1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.32188842" vertical-offset="0" max-vertical-offset="2115">
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <marker date="1387006033000" expanded="true" signature="0:85" placeholder="import ..." />
+            <marker date="1387006033000" expanded="true" signature="99:1341" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="0" selection-start="2832" selection-end="2832" vertical-scroll-proportion="0.81545067" vertical-offset="1530" max-vertical-offset="2310">
+        <state line="94" column="14" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="3210">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <folding>
+            <marker date="1387006033000" expanded="true" signature="0:85" placeholder="import ..." />
+            <marker date="1387006033000" expanded="true" signature="99:1341" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="39" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="2310">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <folding>
+            <marker date="1387006033000" expanded="true" signature="0:85" placeholder="import ..." />
+            <marker date="1387006033000" expanded="true" signature="99:1341" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <folding>
+            <marker date="1387006033000" expanded="true" signature="0:85" placeholder="import ..." />
+            <marker date="1387006033000" expanded="true" signature="99:1341" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <folding>
+            <marker date="1387006033000" expanded="true" signature="0:85" placeholder="import ..." />
+            <marker date="1387006033000" expanded="true" signature="99:1341" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="18" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+          <folding>
+            <marker date="1387006033000" expanded="true" signature="0:85" placeholder="import ..." />
+            <marker date="1387006033000" expanded="true" signature="99:1341" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="170" column="0" selection-start="3474" selection-end="3474" vertical-scroll-proportion="0.9656652" vertical-offset="1875" max-vertical-offset="2655">
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

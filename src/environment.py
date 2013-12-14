@@ -2,6 +2,7 @@ import os
 import re
 import pprint
 import json
+import numpy as np
 
 ALL_SET = ['s1', 's2', 's3', 's4', 's5']
 
@@ -10,7 +11,7 @@ HOCKEY = 'hockey'
 
 BLABEL = 1
 HLABEL = -1
-STOP_WORDS_NAME = 'stopwords.txt'
+STOP_WORDS_NAME = 'stopwords.all'
 
 
 def label2str(label):
@@ -30,6 +31,7 @@ class Env:
   w_size = 0
 
   all_docs = []
+  idf = {}
 
   def __init__(self):
     pass
@@ -43,12 +45,12 @@ class Env:
 
   @staticmethod
   def w2id(word):
-    if word in Env.w2id_dic:
-      return Env.w2id_dic[word]
-    else:
+    if word not in Env.w2id_dic:
       Env.w2id_dic[word] = Env.w_size
       Env.id2w_dic[Env.w_size] = word
       Env.w_size += 1
+
+    return Env.w2id_dic[word]
 
   @staticmethod
   def id2w(wid):
@@ -90,6 +92,19 @@ class Env:
       if x not in Env.test_set:
         Env.train_set.append(x)
 
+  @staticmethod
+  def init_idf():
+    D = len(Env.all_docs)
+    T = Env.w_size
+
+    print T
+    for t in range(T):
+      nt = 0
+      for d in Env.all_docs:
+        if t in d.tf.keys():
+          nt += 1
+      Env.idf[t] = np.log(D * 1.0 / nt)
+
 
 class Doc:
 
@@ -98,7 +113,9 @@ class Doc:
   dname = ''
   set_id = 0
   label = 0
-  w_count = {}
+  tf = {}
+  tfidf = {}
+  tfidf_bool = False
 
   def __init__(self, dname, set_id, label):
     self.dname = dname
@@ -109,21 +126,34 @@ class Doc:
   def __extract_raw_words(self):
     with open(self.ddir) as f:
       ss = f.read()
-      return set(re.findall(re.compile('\w+'), ss.lower()))
+      return set(re.findall(re.compile('[a-zA-Z]+'), ss.lower()))
 
   def __extract_valid_ids(self, wlist):
     for w in wlist:
-      if w not in Env.sw_set:
-        wid = Env.w2id(w)
-        _v = self.w_count.get(wid, 0)
-        self.w_count[wid] = int(_v) + 1
+      if w in Env.sw_set:
+        continue
+      if len(w) == 1:
+        continue
+
+      wid = Env.w2id(w)
+      _v = self.tf.get(wid, 0)
+      self.tf[wid] = int(_v) + 1
 
   def read_doc(self):
     all_words = self.__extract_raw_words()
     self.__extract_valid_ids(all_words)
 
+  def __cal_tfidf(self):
+    for _t in self.tf.keys:
+      self.tfidf[_t] = self.tf[_t] * Env.idf[_t]
+
+  def get_tfidf(self):
+    if not self.tfidf_bool:
+      self.__cal_tfidf()
+    return self.tfidf
+
   def __repr__(self):
-    return json.dumps(self.w_count)
+    return json.dumps(self.tf)
 
 
 def main():
@@ -131,18 +161,11 @@ def main():
   Env.set_data_set(data_dir)
   Env.load_sw_set()
   Env.load_all_doc()
-  pprint.pprint(Env.all_docs)
-
+  #pprint.pprint(Env.all_docs)
+  #pprint.pprint(Env.w_size)
+  with open('words_list', 'w') as fout:
+    pprint.pprint(Env.w2id_dic, fout)
 
 if __name__ == '__main__':
   main()
-
-
-
-
-
-
-
-
-
 
