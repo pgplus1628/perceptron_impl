@@ -120,11 +120,14 @@ class Doc:
     self.tfidf_bool = False
     self.tf = {}
     self.tfidf = {}
+    self.word_num = 0
 
   def __extract_raw_words(self):
     with open(self.ddir) as f:
       ss = f.read()
-      return set(re.findall(re.compile('[a-zA-Z]+'), ss.lower()))
+      all_w = re.findall(re.compile('\w+'), ss.lower())
+      self.word_num = len(all_w)
+      return all_w
 
   def __extract_valid_ids(self, wlist):
     for w in wlist:
@@ -144,7 +147,7 @@ class Doc:
 
   def __cal_tfidf(self):
     for _t in self.tf.keys():
-      self.tfidf[_t] = self.tf[_t] * Env.idf[_t]
+      self.tfidf[_t] = (1.0 * self.tf[_t] / self.word_num) * Env.idf[_t]
 
   def get_tfidf(self):
     if not self.tfidf_bool:

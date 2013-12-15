@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/environment.py" afterPath="$PROJECT_DIR$/src/environment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/perceptron_impl.py" afterPath="$PROJECT_DIR$/src/perceptron_impl.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="perceptron_impl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,23 +28,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="perceptron_impl.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="7" selection-start="667" selection-end="667" vertical-scroll-proportion="0.66523606" vertical-offset="0" max-vertical-offset="1110">
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="7" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+            <state line="51" column="24" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1440">
               <folding>
-                <marker date="1387024896000" expanded="true" signature="113:240" placeholder="..." />
+                <element signature="e#0#38#0" expanded="true" />
+                <marker date="1387117631000" expanded="true" signature="125:298" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -52,9 +43,18 @@
       <file leaf-file-name="environment.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/environment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="0" selection-start="3366" selection-end="3366" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2670">
+            <state line="124" column="22" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.0" vertical-offset="1986" max-vertical-offset="2700">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perceptron_impl.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="0" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.81545067" vertical-offset="330" max-vertical-offset="1095">
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,8 +78,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/environment.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/perceptron_impl.py" />
       </list>
     </option>
@@ -186,15 +186,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="120" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="910" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="914" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="910" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="116" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="113" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -359,9 +359,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1546875" sideWeight="0.6712517" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1546875" sideWeight="0.5722146" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1546875" sideWeight="0.4264099" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -400,7 +400,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
           <folding>
-            <marker date="1387024896000" expanded="true" signature="113:240" placeholder="..." />
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1387117631000" expanded="true" signature="125:298" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -408,9 +409,7 @@
     <entry file="file://$PROJECT_DIR$/src/environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="14" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="3210">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -427,7 +426,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
           <folding>
-            <marker date="1387024896000" expanded="true" signature="113:240" placeholder="..." />
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1387117631000" expanded="true" signature="125:298" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -435,8 +435,25 @@
     <entry file="file://$PROJECT_DIR$/src/environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="111" column="39" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="2310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1387117631000" expanded="true" signature="125:298" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -454,7 +471,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
           <folding>
-            <marker date="1387024896000" expanded="true" signature="113:240" placeholder="..." />
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1387117631000" expanded="true" signature="125:298" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -472,25 +490,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
           <folding>
-            <marker date="1387024896000" expanded="true" signature="113:240" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-          <folding>
-            <marker date="1387024896000" expanded="true" signature="113:240" placeholder="..." />
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1387117631000" expanded="true" signature="125:298" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -506,25 +507,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="0" selection-start="3366" selection-end="3366" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2670">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state line="124" column="22" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.0" vertical-offset="1986" max-vertical-offset="2700">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="7" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+        <state line="51" column="24" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1440">
           <folding>
-            <marker date="1387024896000" expanded="true" signature="113:240" placeholder="..." />
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1387117631000" expanded="true" signature="125:298" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/perceptron_impl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="7" selection-start="667" selection-end="667" vertical-scroll-proportion="0.66523606" vertical-offset="0" max-vertical-offset="1110">
+        <state line="60" column="0" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.81545067" vertical-offset="330" max-vertical-offset="1095">
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
