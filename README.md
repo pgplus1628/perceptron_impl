@@ -30,9 +30,8 @@ python main.py
 运行时间 : 4:08    
 平均F1   : 0.938317    
 
-    `zork% time python main.py`
+    zork% time python main.py
 
-    ```
     [ Initialize ] start
      >>> init_idf Document = 1989 Term = 19722
      >>> init_idf ok
@@ -116,4 +115,3 @@ python main.py
     [ Test ] pre = 0.954315 rec = 0.949495 f1 = 0.951899
     [ Average ]  average_f1 = 0.938317
     python main.py  247.77s user 0.85s system 99% cpu 4:08.66 total
-    ```
